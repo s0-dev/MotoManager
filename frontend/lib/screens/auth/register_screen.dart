@@ -27,8 +27,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
   void _submitForm() {
     if (_formKey.currentState!.validate()) {
       // Simulate registration logic
-      print('Email: ${_emailController.text}');
-      print('Password: ${_passwordController.text}');
+      // print('Email: ${_emailController.text}');
+      // print('Password: ${_passwordController.text}');
       // Here you can add your registration logic, e.g., API call
       ScaffoldMessenger.of(
         context,

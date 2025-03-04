@@ -22,7 +22,7 @@ class SplashScreen extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      // TODO: learn to use images in flutter
+                      // learn to use images in flutter
                       // Logo centered at the top
                       // Uncomment and provide the correct path to your image
                       // Image.asset(
@@ -86,7 +86,33 @@ class SplashScreen extends StatelessWidget {
                       ),
                     ),
                   ),
+                  // ===== ELIMINAR ESTE BOTON, SOLO PARA TESTS =====
 
+                  // Agregar un separador
+                  const SizedBox(height: 16),
+
+                  SizedBox(
+                    width: double.infinity,
+                    height: 48,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: primaryPurple,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                      ),
+                      onPressed: () {
+                        // Navigate to your login screen
+                        Navigator.pushNamed(context, '/home');
+                      },
+                      child: const Text(
+                        'Ir a ver las motos',
+                        style: TextStyle(fontSize: 16, color: Colors.white),
+                      ),
+                    ),
+                  ),
+
+                  // ===== ELIMINAR ESTE BOTON, SOLO PARA TESTS =====
                   const SizedBox(height: 16),
 
                   // "No tienes cuenta? Regístrate"

@@ -145,7 +145,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                       onPressed: () {
-                        // TODO: Implement login logic
+                        // Implement login logic
                       },
                       child: const Text(
                         'Iniciar sesión',
