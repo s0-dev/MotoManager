@@ -22,16 +22,13 @@ class SplashScreen extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      // learn to use images in flutter
                       // Logo centered at the top
                       // Uncomment and provide the correct path to your image
-                      // Image.asset(
-                      //   'assets/images/logo.png',
-                      //   width: 140,
-                      //   height: 140,
-                      //   color: primaryPurple, // Tint the image purple if needed
-                      // ),
-                      const SizedBox(height: 40),
+                      Image.asset(
+                        'lib/assets/images/Logo-base.png',
+                        width: 250,
+                        height: 250,
+                      ),
 
                       // Main Title
                       const Text(

@@ -22,5 +22,5 @@ dev_dependencies:
 
 flutter:
   assets:
-    - lib/assets/images/logo.png
+    - lib/assets/images/Logo-base.png
   uses-material-design: true
