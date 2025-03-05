@@ -21,29 +21,21 @@ motorcycle_manager/
 │   ├── assets/            # Recursos | implementando
 │   ├── pubspec.yaml       # Configuración de flutter | implementando
 │   └── test/              # Tests del front | implementando
-└── backend/               # Go backend API | implementando
-    ├── cmd/               # Punto de entrada del backend | implementando
-    ├── internal/          # Lógica capa de negocio | implementando
-    │   ├── auth/          # Manejadores de auth | implementando
-    │   ├── handlers/      # Endpoints de la API. | implementando
-    │   ├── models/        # Modelos de datos en Go (User, Motorcycle) | implementando
-    │   ├── repository/    # Capa de la base de datos | implementando
-    │   └── services/      # Utilidades y lógica de negocio | implementando
-    ├── config/            # Archivos de configuración | implementando
+└── backend/               # Dart backend API | implementando
     └── Dockerfile         # Contenerización del backend | implementando
 ```
 
 ## Técnologias usadas
 
 - **Frontend:**  
-  - [Flutter](https://flutter.dev) & Dart  
-  - SQLite para almacenamiento local
+  - [Flutter](https://flutter.dev)
+  - SQLite para almacenamiento local | implementando
 - **Backend:**  
-  - [Go](https://golang.org)  
-  - PostgreSQL como base de datos persistente  
-  - Docker para contenerización, Minikube opcional para kubernetes local
+  - Dart
+  - PostgreSQL como base de datos persistente | implementando
+  - Docker para contenerización | implementando
 - **CI/CD:**  
-  - Jenkins para build, test y despliegue
+  - Jenkins para build, test y despliegue | implementando
 
 ## Configuración e instalación
 
