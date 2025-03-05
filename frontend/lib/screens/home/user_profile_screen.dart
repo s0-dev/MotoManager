@@ -12,9 +12,10 @@ class UserProfileScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: backgroundColor,
       appBar: AppBar(
-        title: const Text('Profile', style: TextStyle(color: Colors.white)),
+        title: const Text('Perfil', style: TextStyle(color: Colors.white)),
         backgroundColor: backgroundColor,
         elevation: 0,
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       body: SafeArea(
         child: Padding(
@@ -25,14 +26,14 @@ class UserProfileScreen extends StatelessWidget {
               CircleAvatar(
                 radius: 50,
                 backgroundImage: const AssetImage(
-                  'assets/images/avatar.png',
+                  'lib/assets/images/Logo-base.png',
                 ), // Update asset path
                 backgroundColor: primaryPurple,
               ),
               const SizedBox(height: 16),
               // User Name
               const Text(
-                'John Doe',
+                'Lautaro Devoto',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 24,
@@ -42,7 +43,7 @@ class UserProfileScreen extends StatelessWidget {
               const SizedBox(height: 8),
               // User Email
               const Text(
-                'john.doe@example.com',
+                'tu@email.com',
                 style: TextStyle(color: Colors.white70, fontSize: 16),
               ),
               const SizedBox(height: 24),
@@ -50,14 +51,14 @@ class UserProfileScreen extends StatelessWidget {
               ListTile(
                 leading: Icon(Icons.phone, color: primaryPurple),
                 title: const Text(
-                  '+1 234 567 890',
+                  'Teléfono',
                   style: TextStyle(color: Colors.white),
                 ),
               ),
               ListTile(
                 leading: Icon(Icons.location_on, color: primaryPurple),
                 title: const Text(
-                  '1234 Main St, City, Country',
+                  'Localización',
                   style: TextStyle(color: Colors.white),
                 ),
               ),

@@ -11,9 +11,10 @@ class SettingsScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: backgroundColor,
       appBar: AppBar(
-        title: const Text('Settings', style: TextStyle(color: Colors.white)),
+        title: const Text('Ajustes', style: TextStyle(color: Colors.white)),
         backgroundColor: backgroundColor,
         elevation: 0,
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       body: SafeArea(
         child: ListView(
@@ -23,7 +24,7 @@ class SettingsScreen extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.symmetric(vertical: 8.0),
               child: Text(
-                'Account Settings',
+                'Ajustes de cuenta',
                 style: TextStyle(
                   color: Colors.white70,
                   fontSize: 18,
@@ -34,7 +35,7 @@ class SettingsScreen extends StatelessWidget {
             ListTile(
               leading: Icon(Icons.lock, color: primaryPurple),
               title: const Text(
-                'Change Password',
+                'Cambiar contraseña',
                 style: TextStyle(color: Colors.white),
               ),
               onTap: () {
@@ -44,7 +45,7 @@ class SettingsScreen extends StatelessWidget {
             ListTile(
               leading: Icon(Icons.email, color: primaryPurple),
               title: const Text(
-                'Update Email',
+                'Cambiar email',
                 style: TextStyle(color: Colors.white),
               ),
               onTap: () {
@@ -56,7 +57,7 @@ class SettingsScreen extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.symmetric(vertical: 8.0),
               child: Text(
-                'Notifications',
+                'Notificaciones',
                 style: TextStyle(
                   color: Colors.white70,
                   fontSize: 18,
@@ -67,7 +68,7 @@ class SettingsScreen extends StatelessWidget {
             SwitchListTile(
               activeColor: primaryPurple,
               title: const Text(
-                'Enable Notifications',
+                'Activar notificaciones',
                 style: TextStyle(color: Colors.white),
               ),
               value: true,

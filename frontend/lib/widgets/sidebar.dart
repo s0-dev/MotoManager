@@ -17,9 +17,17 @@ class Sidebar extends StatelessWidget {
             // Drawer header
             DrawerHeader(
               decoration: BoxDecoration(color: primaryPurple),
-              child: const Text(
-                'Sidebar',
-                style: TextStyle(color: Colors.white, fontSize: 24),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  // Logo
+                  Image.asset(
+                    'lib/assets/images/Logo-base.png',
+                    width: 120,
+                    height: 120,
+                  ),
+                  const SizedBox(height: 16),
+                ],
               ),
             ),
 
@@ -27,7 +35,7 @@ class Sidebar extends StatelessWidget {
               // User Profile tile
               leading: const Icon(Icons.person, color: Colors.white),
               title: const Text(
-                'Profile',
+                'Perfil',
                 style: TextStyle(color: Colors.white),
               ),
               onTap: () {
@@ -42,7 +50,7 @@ class Sidebar extends StatelessWidget {
               // Settings tile
               leading: const Icon(Icons.settings, color: Colors.white),
               title: const Text(
-                'Settings',
+                'Ajustes',
                 style: TextStyle(color: Colors.white),
               ),
               onTap: () {

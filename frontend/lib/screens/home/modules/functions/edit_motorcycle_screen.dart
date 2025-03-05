@@ -76,6 +76,7 @@ class _EditMotorcycleScreenState extends State<EditMotorcycleScreen> {
         ),
         backgroundColor: backgroundColor,
         elevation: 0,
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       backgroundColor: backgroundColor,
       body: SafeArea(
@@ -90,9 +91,9 @@ class _EditMotorcycleScreenState extends State<EditMotorcycleScreen> {
                   controller: _nameController,
                   style: const TextStyle(color: Colors.white),
                   decoration: InputDecoration(
-                    labelText: 'Name of the Bike',
+                    labelText: 'Edita el nombre de la moto',
                     labelStyle: const TextStyle(color: primaryPurple),
-                    hintText: 'Enter bike name',
+                    hintText: 'El nombre de tu moto',
                     hintStyle: const TextStyle(color: Colors.white54),
                     enabledBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: primaryPurple),
@@ -108,7 +109,7 @@ class _EditMotorcycleScreenState extends State<EditMotorcycleScreen> {
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return 'Please enter a bike name';
+                      return 'Ingresa un nombre';
                     }
                     return null;
                   },
@@ -119,9 +120,9 @@ class _EditMotorcycleScreenState extends State<EditMotorcycleScreen> {
                   controller: _descriptionController,
                   style: const TextStyle(color: Colors.white),
                   decoration: InputDecoration(
-                    labelText: 'Description',
+                    labelText: 'Edita descripción',
                     labelStyle: const TextStyle(color: primaryPurple),
-                    hintText: 'Enter bike description',
+                    hintText: 'Ingresa una descripción',
                     hintStyle: const TextStyle(color: Colors.white54),
                     enabledBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: primaryPurple),
@@ -138,7 +139,7 @@ class _EditMotorcycleScreenState extends State<EditMotorcycleScreen> {
                   maxLines: 3,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return 'Please enter a description';
+                      return 'Ingresa una descripción';
                     }
                     return null;
                   },
@@ -155,7 +156,7 @@ class _EditMotorcycleScreenState extends State<EditMotorcycleScreen> {
                   ),
                   onPressed: _updateMotorcycle,
                   child: const Text(
-                    'Update Motorcycle',
+                    'Actualizar moto',
                     style: TextStyle(fontSize: 16, color: Colors.white),
                   ),
                 ),
