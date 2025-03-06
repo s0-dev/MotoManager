@@ -12,17 +12,18 @@
 motorcycle_manager/
 ├── frontend/              # Flutter app
 │   ├── lib/
-│   │   ├── models/        # Modelos de datos (User, Motorcycle) | implementando
-│   │   ├── screens/       # UI screens (SplashScreen, LoginScreen, RegisterScreen & + por venir)
+│   │   ├── models/        # Modelos de datos (User, Motorcycle)
+│   │   ├── screens/       # UI screens
 │   │   ├── services/      # Llamados a la API y almacenamiento local (SQLite) | implementando
 │   │   ├── state/         # Manejadores de estados | implementando
 │   │   ├── utils/         # Utilidades | implementando
 │   │   └── main.dart      # Punto de entrada de la app 
-│   ├── assets/            # Recursos | implementando
-│   ├── pubspec.yaml       # Configuración de flutter | implementando
+│   ├── assets/            # Recursos
+│   ├── pubspec.yaml       # Configuración de flutter
 │   └── test/              # Tests del front | implementando
 └── backend/               # Dart backend API | implementando
-    └── Dockerfile         # Contenerización del backend | implementando
+│   ├── docker-compose.yml # orquestador de postgres y backend
+    └── Dockerfile         # Contenerización del backend
 ```
 
 ## Técnologias usadas
@@ -32,8 +33,8 @@ motorcycle_manager/
   - SQLite para almacenamiento local | implementando
 - **Backend:**  
   - Dart
-  - PostgreSQL como base de datos persistente | implementando
-  - Docker para contenerización | implementando
+  - PostgreSQL como base de datos persistente
+  - Docker para contenerización
 - **CI/CD:**  
   - Jenkins para build, test y despliegue | implementando
 
