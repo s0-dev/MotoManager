@@ -7,7 +7,7 @@ class PostgreSQLDatabase {
   Future<void> connect() async {
     final env = DotEnv(includePlatformEnvironment: true)..load();
 
-    // 1. Asignar la conexión a la variable _connection
+    // 1. assign env variables to the connection
     _connection = await Connection.open(
       Endpoint(
         host: env['DB_HOST']!,
@@ -16,9 +16,10 @@ class PostgreSQLDatabase {
         username: env['DB_USER']!,
         password: env['DB_PASSWORD']!,
       ),
+      settings: ConnectionSettings(sslMode: SslMode.disable),
     );
 
-    // 2. Verificar la conexión
+    // 2. Verify the connection
     await _connection.execute('SELECT 1');
     print('✅ Connected to PostgreSQL');
   }
